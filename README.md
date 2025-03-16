@@ -1,5 +1,6 @@
 # hackslash_project
-this is the induction project for Hackslash NIT Patna.
+This is the induction project for Hackslash NIT Patna.
+I AM EXTREMELY SORRY TO THE JUDGES AS I WAS UNABLE TO UPLOAD THE VIDEO . I HAVE TRIED TO EXPLAIN THE PROJECT HERE.
 Below link of the webpage opens the homepage which cotains the simon says game which is under project section.
 On clicking vist , it will redirect to the game webpage. The webpage is optimised for mobile screen to dekstop screen.
 The game has three levels Hard , medium and easy which is based on blinking time of the boxes. After selecting the the difficulty level the game will start after pressing any key.
