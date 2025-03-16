@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+background-color: rgb(0, 0, 0);
+
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+header{
+    background-color: black;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header a:hover{
+    color: rgb(41, 172, 122);
+}
+
+.head{
+    text-align: center;
+    padding: 60px;
+    font-size: 2rem;
+    
+  
+  
+}
+.TWO {
+    color: lightseagreen;
+    text-shadow: 2px 2px 2px   black;
+
+}
+.two{
+    padding: 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  
+   
+}
+.s{
+    color: lightgrey;
+    text-shadow: 2px 2px 2px   black;
+}
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+
+   
+}
+.project1 , .project2{
+    
+    padding: 5px;
+    display: flex;
+    height: 60vh;
+    text-align: center;
+    align-items: center;
+    width: 27vw;
+    background-color: grey;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px black;
+    gap: 10px;
+
+}
+.projects img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.knowus{
+    display: flex;
+    
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    color: cadetblue;
+    gap: 60px;
+}
+.about{
+    padding: 6%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.developer{
+    display: flex;
+    padding: 6%;
+    justify-content: space-between;
+    gap: 5%;
+    align-items: center;
+
+}
+.developer p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: cadetblue;
+}
+.developer img{
+    
+    border-radius: 60%;
+}
+footer{
+    text-align: center;
+    background-color: azure;
+    box-sizing: border-box;
+    padding: 3%;
+}
+.btn{
+    height: 8%;
+    width: 14%;
+    border-radius: 10px;
+    background-color: rgb(53, 209, 141);
+    
+
+}
+
+
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.project1 :hover ,.project2 :hover{
+    transform: scale(1.2);
+}
