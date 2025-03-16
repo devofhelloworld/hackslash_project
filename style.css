@@ -1,153 +1,238 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-background-color: rgb(0, 0, 0);
 
-background-repeat: no-repeat;
-background-size: cover;
-
-}
-
-header{
+body {
     background-color: black;
-    padding: 30px;
-    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: black;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+
 header ul {
     display: flex;
     align-items: center;
-    gap: 50px;
-    text-align: center;
+    gap: 30px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
-header a{
+header a {
     text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color: white;
+    transition: color 0.3s ease-in-out;
 }
-header a:hover{
+
+header a:hover {
     color: rgb(41, 172, 122);
 }
 
-.head{
+
+.head {
     text-align: center;
     padding: 60px;
     font-size: 2rem;
-    
-  
-  
 }
+
+.s {
+    color: lightgrey;
+    text-shadow: 2px 2px 2px black;
+}
+
 .TWO {
     color: lightseagreen;
-    text-shadow: 2px 2px 2px   black;
-
+    text-shadow: 2px 2px 2px black;
 }
-.two{
+
+
+.two {
     padding: 50px;
     text-align: center;
-    justify-content: space-between;
-    align-items: center;
-  
-   
 }
-.s{
-    color: lightgrey;
-    text-shadow: 2px 2px 2px   black;
-}
-.projects{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-    align-items: center;
 
-   
-}
-.project1 , .project2{
-    
-    padding: 5px;
+.projects {
     display: flex;
-    height: 60vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project1, .project2 {
+    padding: 20px;
+    display: flex;
+    height: auto;
     text-align: center;
     align-items: center;
-    width: 27vw;
+    width: 90%;
+    max-width: 350px;
     background-color: grey;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px black;
     gap: 10px;
-
+    transition: transform 0.3s ease-in-out;
 }
-.projects img{
+
+.projects img {
     width: 100%;
     border-radius: 10px;
 }
 
-.knowus{
-    display: flex;
-    
-    align-items: center;
-    font-size: 1.5rem;
-    justify-content: space-between;
-    color: cadetblue;
-    gap: 60px;
+
+.project1:hover, .project2:hover {
+    transform: scale(1.05);
 }
-.about{
+
+
+.about {
     padding: 6%;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.developer{
+.knowus {
     display: flex;
-    padding: 6%;
-    justify-content: space-between;
-    gap: 5%;
+    flex-direction: column;
     align-items: center;
-
-}
-.developer p{
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: cadetblue;
-}
-.developer img{
-    
-    border-radius: 60%;
-}
-footer{
     text-align: center;
-    background-color: azure;
-    box-sizing: border-box;
-    padding: 3%;
+    gap: 20px;
 }
-.btn{
-    height: 8%;
-    width: 14%;
+
+.knowus img {
+    width: 80%;
+    max-width: 400px;
+}
+
+
+.developer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.developer p {
+    font-size: 1.2rem;
+    color: cadetblue;
+    max-width: 600px;
+}
+
+.developer img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.btn {
+    padding: 10px 20px;
     border-radius: 10px;
     background-color: rgb(53, 209, 141);
-    
-
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.btn:hover {
+    background-color: rgb(41, 172, 122);
+}
 
-.btn a{
+.btn a {
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.project1 :hover ,.project2 :hover{
-    transform: scale(1.2);
+footer {
+    text-align: center;
+    background-color: azure;
+    padding: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .knowus {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .developer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .head {
+        font-size: 1.5rem;
+        padding: 40px;
+    }
+
+    .project1, .project2 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .developer img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .head {
+        font-size: 1.2rem;
+        padding: 30px;
+    }
+
+    .developer img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
